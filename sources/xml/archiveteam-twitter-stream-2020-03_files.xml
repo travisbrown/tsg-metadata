@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1632458996</mtime>
+    <size>10737</size>
+    <md5>1c12beb386999d8c11cfdc85d35c6ac6</md5>
+    <crc32>eccbbb21</crc32>
+    <sha1>581f9aa3bb727e6f7e9a1ed04ff6baf61ca26dfc</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="archiveteam-twitter-stream-2020-03_archive.torrent" source="metadata">
+    <btih>0d95aef894c956f4f7f5a49e1a3914bd3c9c107e</btih>
+    <mtime>1632849522</mtime>
+    <size>381870</size>
+    <md5>119fa109ebbd798a871b24e78feb5a4b</md5>
+    <crc32>496bf56a</crc32>
+    <sha1>fa53057b4ca4b896e47b320ac74eb69c03ea48fe</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2020-03_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>27d76acf92aed5346c57f342d9bbef66</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="archiveteam-twitter-stream-2020-03_meta.sqlite" source="original">
+    <mtime>1632450548</mtime>
+    <size>49152</size>
+    <md5>8863d47fd89a3b48b78ae3093abfe315</md5>
+    <crc32>94d93c0c</crc32>
+    <sha1>e5f6ecf5f14e435e681338082b701cb3c2d68319</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2020-03_meta.xml" source="original">
+    <mtime>1632849520</mtime>
+    <size>941</size>
+    <md5>748f3bb3d419e8e5875732635206df5c</md5>
+    <crc32>37d16fc9</crc32>
+    <sha1>995a52b78a658d85c02472a19b80745ffb03748f</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="twitter_stream_2020_03_01.tar" source="original">
+    <mtime>1594187433</mtime>
+    <size>2354882560</size>
+    <md5>6d2a63c66405789df5f67f9cff734e9f</md5>
+    <crc32>0ed188ef</crc32>
+    <sha1>be6ed834485027d6d868dda05b28865f8242461d</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_02.tar" source="original">
+    <mtime>1594187560</mtime>
+    <size>2327500800</size>
+    <md5>4fd9e6b83e352654bfc346e70844a509</md5>
+    <crc32>9a3eed43</crc32>
+    <sha1>6ca91d6b512ce67455acab0aa49ee24e2498f1c1</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_03.tar" source="original">
+    <mtime>1594187637</mtime>
+    <size>2319319040</size>
+    <md5>ba49ffc9c46e584f2c91911aa3f2ed93</md5>
+    <crc32>329cd23a</crc32>
+    <sha1>e0abc65132f619c71088bce60a96349db0e16b9f</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_04.tar" source="original">
+    <mtime>1594187729</mtime>
+    <size>2332190720</size>
+    <md5>a0e34eed4abe7e65115d023fda2a7b40</md5>
+    <crc32>21089081</crc32>
+    <sha1>2f13a0e7f183cf6fd0bcbd40f5979f864a5045b4</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_05.tar" source="original">
+    <mtime>1594187809</mtime>
+    <size>2301685760</size>
+    <md5>b45f9a152115476069fdb95128448d26</md5>
+    <crc32>e5581f4c</crc32>
+    <sha1>12f0c52cd483136350a3b216b327121008f9a22f</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_06.tar" source="original">
+    <mtime>1594187896</mtime>
+    <size>2266470400</size>
+    <md5>e2b8f4302f3ba91ecf715d24c601f53a</md5>
+    <crc32>c215cdf8</crc32>
+    <sha1>4e6a6640797d8e48fc7fe88b95f8bddb57b9759a</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_07.tar" source="original">
+    <mtime>1594188016</mtime>
+    <size>2251694080</size>
+    <md5>3f6e0412001e66cf12a581ac1c9ec899</md5>
+    <crc32>dc220991</crc32>
+    <sha1>302195c3d301bb28b4664f6cab30a9f133b9858b</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_08.tar" source="original">
+    <mtime>1594188110</mtime>
+    <size>2314649600</size>
+    <md5>1de28aa721c148f8f0ab8baa8da51276</md5>
+    <crc32>f56af267</crc32>
+    <sha1>d130c9c176598bf6b79bb051f77d1f7f3157dce8</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_09.tar" source="original">
+    <mtime>1594188218</mtime>
+    <size>2313789440</size>
+    <md5>d54cee3736e52ca27d8b4414330ff034</md5>
+    <crc32>6d681b76</crc32>
+    <sha1>6bba13004db07d9c033f4eff3a96054905d87035</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_10.tar" source="original">
+    <mtime>1594188354</mtime>
+    <size>2305894400</size>
+    <md5>62871e86bac139eff9e27f9ef204ec53</md5>
+    <crc32>998e9e33</crc32>
+    <sha1>02564f12098154a1376f67cac82dc60125052060</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_11.tar" source="original">
+    <mtime>1594188446</mtime>
+    <size>2346086400</size>
+    <md5>41f808136b856b2c3bcf944aad04636b</md5>
+    <crc32>680e0d5b</crc32>
+    <sha1>d7bf113ae0ff6abb10a2a474cd668e2637d2889b</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_12.tar" source="original">
+    <mtime>1594188569</mtime>
+    <size>2494689280</size>
+    <md5>84a654a0f239be02f7f46b023436b460</md5>
+    <crc32>e977a718</crc32>
+    <sha1>67a4ee0d8b390ade3ae9e83f7a87997c52f849d8</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_13.tar" source="original">
+    <mtime>1594188657</mtime>
+    <size>2454466560</size>
+    <md5>00cd219a08abc5712b09259bfaebe3c5</md5>
+    <crc32>fdca0902</crc32>
+    <sha1>6b32e4ad37338e955d3227400d34f9abb420e251</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_14.tar" source="original">
+    <mtime>1594188739</mtime>
+    <size>2416568320</size>
+    <md5>9c69a13c7d4835b4403739e435f31a67</md5>
+    <crc32>3fa6817b</crc32>
+    <sha1>38e9fb10ca444a351bd0945083318b34d7b40b40</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_15.tar" source="original">
+    <mtime>1594188844</mtime>
+    <size>2517514240</size>
+    <md5>630eda3c7b6027d7ec32057f12944150</md5>
+    <crc32>6768977e</crc32>
+    <sha1>74aeb346ccf0f335fd91ee1c7b4e682f1589d6f7</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_16.tar" source="original">
+    <mtime>1594188930</mtime>
+    <size>2524119040</size>
+    <md5>9c4009fd51ec53c501a894ba75e1e5ff</md5>
+    <crc32>247b3eb2</crc32>
+    <sha1>783997356fdb87d8c30a3e07074efae9e178374a</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_17.tar" source="original">
+    <mtime>1594189009</mtime>
+    <size>2580439040</size>
+    <md5>7a73f5590d71217bb315be1621579ff8</md5>
+    <crc32>524f0d18</crc32>
+    <sha1>7710e0a01fc32dd52b8df2d81caf2c9c4461f7fd</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_18.tar" source="original">
+    <mtime>1594189131</mtime>
+    <size>2566512640</size>
+    <md5>3d7a563e8fde7fc0d482f926fbef419e</md5>
+    <crc32>d33e09ab</crc32>
+    <sha1>6f72ec38976a0889f1e1452f76a41ff9e4a4daa8</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_19.tar" source="original">
+    <mtime>1594189250</mtime>
+    <size>2666321920</size>
+    <md5>0703ee1cda15b78a5e80ab113b9b2c29</md5>
+    <crc32>23d56594</crc32>
+    <sha1>8a36e586facab04cc9789b9f0c9450814c7315c3</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_20.tar" source="original">
+    <mtime>1594189312</mtime>
+    <size>2630492160</size>
+    <md5>ede1741bd998bc50caa525b0f1296fa2</md5>
+    <crc32>ea7dd1ae</crc32>
+    <sha1>1cbc1d978282fa09a245975de99ecb92780ed58d</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_21.tar" source="original">
+    <mtime>1594189414</mtime>
+    <size>2655662080</size>
+    <md5>83167d4f1e6af48bece99d7642568fcd</md5>
+    <crc32>5eb175ce</crc32>
+    <sha1>dfe481124e60a36ca4ab4bcb378bf9d02f7edb8e</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_22.tar" source="original">
+    <mtime>1594189521</mtime>
+    <size>2715095040</size>
+    <md5>f5c0e2aabbe3777bf64909deed56b255</md5>
+    <crc32>ac9a27ee</crc32>
+    <sha1>aaf58e5aa8b16681f0b1b206ef006f9c91fbc875</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_23.tar" source="original">
+    <mtime>1594189693</mtime>
+    <size>2715893760</size>
+    <md5>90542b2af349b6884e2eb3cfd224ed6a</md5>
+    <crc32>444e688c</crc32>
+    <sha1>5b127962dc9f6e1c6026736c5e7148484b65211e</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_24.tar" source="original">
+    <mtime>1594189908</mtime>
+    <size>2710804480</size>
+    <md5>c6bc7fb4e748289af788f5e9a5265774</md5>
+    <crc32>27a02d96</crc32>
+    <sha1>d625da74bcf194dc7869b5793f8c48240dceacc1</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_25.tar" source="original">
+    <mtime>1594190005</mtime>
+    <size>2654576640</size>
+    <md5>001e0789de0777473e71cbfb2c1617a6</md5>
+    <crc32>5b966456</crc32>
+    <sha1>694147a6f59b21670522270158a2d97474e72218</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_26.tar" source="original">
+    <mtime>1594190087</mtime>
+    <size>2687242240</size>
+    <md5>1e63ffb5cc054ce2b4505cdeb5ad1cb4</md5>
+    <crc32>051fbc94</crc32>
+    <sha1>74beb12b49ac194bce479019f1bdc28b239ac412</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_27.tar" source="original">
+    <mtime>1594190215</mtime>
+    <size>2692833280</size>
+    <md5>f206e8178e703dcd208f66faab451583</md5>
+    <crc32>342d39bf</crc32>
+    <sha1>9c98ef1211620d1b52b056e2b9eb0897fff19928</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_28.tar" source="original">
+    <mtime>1594190296</mtime>
+    <size>2594785280</size>
+    <md5>befca59efbe406c9a7a5b264d8df977c</md5>
+    <crc32>42ac7d8e</crc32>
+    <sha1>b16e4dd0cd5e82b9b6744aee13176a2aaf4a708d</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_29.tar" source="original">
+    <mtime>1594190377</mtime>
+    <size>2673326080</size>
+    <md5>22ba6ce359593d3f30991181ce5b6c5a</md5>
+    <crc32>0a27dd7e</crc32>
+    <sha1>79854d8566f993e5b2dc82555fb12f98be60adcf</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_30.tar" source="original">
+    <mtime>1594190465</mtime>
+    <size>2717982720</size>
+    <md5>3adee6debda2efb9fe476fe8f41d344f</md5>
+    <crc32>a71c87bf</crc32>
+    <sha1>401b553332285faaf7611c34b19bacc0fe77abc3</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitter_stream_2020_03_31.tar" source="original">
+    <mtime>1594190562</mtime>
+    <size>2776115200</size>
+    <md5>faf1c93dc63f954cb60081c3d8e52a74</md5>
+    <crc32>dbe90b39</crc32>
+    <sha1>22546b4a1a437eb92b42edc245eb62190329cfb7</sha1>
+    <format>TAR</format>
+  </file>
+  <file name="twitterlogo.png" source="original">
+    <mtime>1632450546</mtime>
+    <size>153641</size>
+    <md5>1b32c9968c1ef0c144b41153051e49e0</md5>
+    <crc32>48990d09</crc32>
+    <sha1>ab91f5f70fb2157aa0c2f8a3615087044bccd076</sha1>
+    <format>PNG</format>
+  </file>
+  <file name="twitterlogo_thumb.jpg" source="derivative">
+    <format>JPEG Thumb</format>
+    <original>twitterlogo.png</original>
+    <mtime>1632458881</mtime>
+    <size>6195</size>
+    <md5>dacb6d89c21e1659dc58c6afb68c28f9</md5>
+    <crc32>bce6583b</crc32>
+    <sha1>f273a73bcb1b9da33a29498bfd4dc5ca11d69f26</sha1>
+  </file>
+</files>

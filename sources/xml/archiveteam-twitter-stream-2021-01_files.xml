@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1632455057</mtime>
+    <size>10737</size>
+    <md5>1c12beb386999d8c11cfdc85d35c6ac6</md5>
+    <crc32>eccbbb21</crc32>
+    <sha1>581f9aa3bb727e6f7e9a1ed04ff6baf61ca26dfc</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="archiveteam-twitter-stream-2021-01_archive.torrent" source="metadata">
+    <btih>ca948df550aea5516f1d031eeaad8d1d09774b01</btih>
+    <mtime>1632849531</mtime>
+    <size>131494</size>
+    <md5>fd190484c5021fd8d33993c8bd2cef67</md5>
+    <crc32>65e2383b</crc32>
+    <sha1>1637bc7a5ba0093764c24cf5b26df08943bc8f6e</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2021-01_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>ce174852c7aee44ebea3bcc296a69f97</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="archiveteam-twitter-stream-2021-01_meta.sqlite" source="original">
+    <mtime>1632450354</mtime>
+    <size>24576</size>
+    <md5>5ed4cac880260a28f0b0e0c605593f58</md5>
+    <crc32>223c9f80</crc32>
+    <sha1>fa7c0a803f4ad0ff1e383ddbcea813c6da4529c7</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2021-01_meta.xml" source="original">
+    <mtime>1632849530</mtime>
+    <size>836</size>
+    <md5>ed6aefe0f2d561674be84fa9c0ebb7d0</md5>
+    <crc32>77fd64c4</crc32>
+    <sha1>7219e52b2d2b816702450ed1996eebf9341f6e06</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2021-01_reviews.xml" source="original">
+    <mtime>1622416511</mtime>
+    <size>601</size>
+    <md5>6daf12e076b76cc43f0b4e5ba0e4b716</md5>
+    <crc32>16d8ef67</crc32>
+    <sha1>87d51cfdc60d54ade8c3760ad876ee85207c6651</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="twitter-stream-2021-01-01.zip" source="original">
+    <mtime>1611322021</mtime>
+    <size>2047072118</size>
+    <md5>6a725db7fd4f1fc27262e6676dff98da</md5>
+    <crc32>a58042ff</crc32>
+    <sha1>9bd4e2ed70422c5b08e6c9184ef86b9bd17e75f8</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-02.zip" source="original">
+    <mtime>1611322091</mtime>
+    <size>2146839645</size>
+    <md5>a2ac94b1b5355fb983ab86c47ffd10fd</md5>
+    <crc32>7fbd12b4</crc32>
+    <sha1>d19a316186dab01489ec6e8f4300a5a2e7e411d1</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-03.zip" source="original">
+    <mtime>1611322158</mtime>
+    <size>2244641887</size>
+    <md5>53c574e76ef06a1224d164ecd22efa35</md5>
+    <crc32>c664cbca</crc32>
+    <sha1>8d7d37c5a90b10cd6da43bc566016d9247e12dcc</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-04.zip" source="original">
+    <mtime>1611322222</mtime>
+    <size>2276933053</size>
+    <md5>d81e473d51c3bf5ed334af56c82686b5</md5>
+    <crc32>6227cb61</crc32>
+    <sha1>ccb61e36c0e8b69bd357d60e7a3e4a1b8ecf2daf</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-05.zip" source="original">
+    <mtime>1611322279</mtime>
+    <size>2328957029</size>
+    <md5>948b63d50fce5ee45cb96aa7d08b7255</md5>
+    <crc32>9c6e0af3</crc32>
+    <sha1>1ade60a95dd85cc2a5589b36f3e97a0a62d203ff</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-06.zip" source="original">
+    <mtime>1611322309</mtime>
+    <size>1016623436</size>
+    <md5>226a53c41ff6d4aad8529541d9f45a26</md5>
+    <crc32>22e69474</crc32>
+    <sha1>a2090b3028ef097549c07ad8435ae842878e8232</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-25.zip" source="original">
+    <mtime>1625367190</mtime>
+    <size>396558099</size>
+    <md5>27cf5d9d3f664facc4bbea7185439018</md5>
+    <crc32>0fddee01</crc32>
+    <sha1>97557d68bef90298079f40c967f6779fab53cba6</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-26.zip" source="original">
+    <mtime>1625367373</mtime>
+    <size>2360696221</size>
+    <md5>f98626be996c651c934f8ed9726e014d</md5>
+    <crc32>a96f4d53</crc32>
+    <sha1>8ba6a950037ff154597c10bbbc540092d7477c7d</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-27.zip" source="original">
+    <mtime>1625367630</mtime>
+    <size>2308248485</size>
+    <md5>29d8d348fa6856f8d4bf3ce400baaecc</md5>
+    <crc32>6a9a4378</crc32>
+    <sha1>17c76ce1ce081864b5167c2ccd575400ef5b9c5b</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-28.zip" source="original">
+    <mtime>1625368005</mtime>
+    <size>2315508078</size>
+    <md5>5787cd09840871db38510f2157de863d</md5>
+    <crc32>b895eb6c</crc32>
+    <sha1>5c19742ed9e29730b99a6a22a7319e003e03c245</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-29.zip" source="original">
+    <mtime>1625368549</mtime>
+    <size>2242866026</size>
+    <md5>bebd10b7c682db0f12a21a29c9d3bb93</md5>
+    <crc32>53756606</crc32>
+    <sha1>c987dde7bdf4055bb6a826afa8962648a3113c69</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-30.zip" source="original">
+    <mtime>1625368766</mtime>
+    <size>2260090206</size>
+    <md5>2cc0f448b1c528b23fea0989fb53c213</md5>
+    <crc32>64f99376</crc32>
+    <sha1>dc072e219e21c643670b4799a2fcc58c85c5d51b</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitter-stream-2021-01-31.zip" source="original">
+    <mtime>1625369054</mtime>
+    <size>2398806083</size>
+    <md5>1d1ab37d4bd2b181bfb1719cf1f58ec8</md5>
+    <crc32>a76be37e</crc32>
+    <sha1>2c686bf083f08a32d086d369d89c5e8c29801be6</sha1>
+    <format>ZIP</format>
+  </file>
+  <file name="twitterlogo.png" source="original">
+    <mtime>1632450350</mtime>
+    <size>153641</size>
+    <md5>1b32c9968c1ef0c144b41153051e49e0</md5>
+    <crc32>48990d09</crc32>
+    <sha1>ab91f5f70fb2157aa0c2f8a3615087044bccd076</sha1>
+    <format>PNG</format>
+  </file>
+  <file name="twitterlogo_thumb.jpg" source="derivative">
+    <format>JPEG Thumb</format>
+    <original>twitterlogo.png</original>
+    <mtime>1632455018</mtime>
+    <size>6195</size>
+    <md5>dacb6d89c21e1659dc58c6afb68c28f9</md5>
+    <crc32>bce6583b</crc32>
+    <sha1>f273a73bcb1b9da33a29498bfd4dc5ca11d69f26</sha1>
+  </file>
+</files>

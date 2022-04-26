@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1632842656</mtime>
+    <size>9755</size>
+    <md5>935219e7207a24428c63d300d0432432</md5>
+    <crc32>a6a546b6</crc32>
+    <sha1>e7b66f985d40d56bc49ca2979583c38adeacf743</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="archiveteam-json-twitterstream-2012_archive.torrent" source="metadata">
+    <btih>3d578089a55f9354b8887691f27fe307adc28600</btih>
+    <mtime>1632842656</mtime>
+    <size>125602</size>
+    <md5>9331679ccdc39bcf6d12c6a2d046e959</md5>
+    <crc32>e00fb82c</crc32>
+    <sha1>36c3b4dbd8372ee7458d63f9667fc9102e5a4ed4</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="archiveteam-json-twitterstream-2012_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>dc31ab9e9a2b5c8247f88a8b2e3a1a1c</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="archiveteam-json-twitterstream-2012_meta.sqlite" source="original">
+    <mtime>1514841610</mtime>
+    <size>8192</size>
+    <md5>e2c88cf41accd8bafd645667dac85046</md5>
+    <crc32>5d3b92c0</crc32>
+    <sha1>71204d9ece376551458b58c566cc5094d09aec8b</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="archiveteam-json-twitterstream-2012_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1632842655</mtime>
+    <size>556</size>
+    <md5>228b63592987bea322752deb586a3dbb</md5>
+    <crc32>759ad085</crc32>
+    <sha1>28c09667d5eeb56dfdfe066e5726bfea986a698d</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-01.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329194782</mtime>
+    <size>809571179</size>
+    <md5>2a072b5d287f1f3fa78d19672e25f6e7</md5>
+    <crc32>ca4deaed</crc32>
+    <sha1>ec266b5709cb50f8e5c6b9e7145fc4a621af0483</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-02.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329194843</mtime>
+    <size>797021362</size>
+    <md5>e4af3a60e294236a8fcff15c706ffcae</md5>
+    <crc32>d75396df</crc32>
+    <sha1>94297f5083c0e03b3314bbaae71670b0d764dae0</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-03.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329194914</mtime>
+    <size>781414496</size>
+    <md5>c081ce98b372ac96d8b9ef55ea25adae</md5>
+    <crc32>7bf771f9</crc32>
+    <sha1>63aa0f80efc37725815835141b42cc039af2c615</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-04.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329194980</mtime>
+    <size>781227910</size>
+    <md5>ebe710e915afc2a918915f219a7309cd</md5>
+    <crc32>641f7760</crc32>
+    <sha1>a7feb48b2d8dc5f87f4f880064279377d7fc0d8d</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-05.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195050</mtime>
+    <size>842540673</size>
+    <md5>1aa000cd2b68c3bd339e83e63c2b4efb</md5>
+    <crc32>8aa01f27</crc32>
+    <sha1>b352681211887b6f61ac2a40dd26e32db56542d7</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-06.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195111</mtime>
+    <size>802566308</size>
+    <md5>a878b1b0be2f23f9dad8998f9cd639f6</md5>
+    <crc32>0b749e53</crc32>
+    <sha1>578c920c7bd0cecc4932c1df68520012429187fb</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-07.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195172</mtime>
+    <size>799626142</size>
+    <md5>2f8be0048c8ef8a7b6582e8da531acf5</md5>
+    <crc32>2122c09f</crc32>
+    <sha1>8fdff38497471fbd278c3357e889b3c942b169b0</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-08.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195251</mtime>
+    <size>808171777</size>
+    <md5>1d749fe3c5acc43a53ffd4caf621bc5c</md5>
+    <crc32>fe0f1cb6</crc32>
+    <sha1>9766d5ca560588e301d6e56426304aaacc166472</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-09.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195323</mtime>
+    <size>774476319</size>
+    <md5>3c9e75cb3efbc3019ea67e077cebdb8d</md5>
+    <crc32>cc168e12</crc32>
+    <sha1>5d6218b33d69c101245551fbd195eec2ed705554</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-10.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195390</mtime>
+    <size>747594607</size>
+    <md5>d51245c83ffc7e16d959e92a87fe66b7</md5>
+    <crc32>c5c00398</crc32>
+    <sha1>e50550296743aaceefad771db9fb71127dba268a</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-11.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195458</mtime>
+    <size>765004040</size>
+    <md5>c1f58422f7d2c85447c6ec7a40ae729c</md5>
+    <crc32>9daaec39</crc32>
+    <sha1>dba8535faeb03ce1da54a974f4eccbd81e42cd42</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-12.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195516</mtime>
+    <size>769829914</size>
+    <md5>5db7b0f7f58a405713da8fa80433a33b</md5>
+    <crc32>c762991b</crc32>
+    <sha1>63d0fff02e83887453775f3482c2a48cb4d21991</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-13.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195575</mtime>
+    <size>746620986</size>
+    <md5>80028bca14e03cf23181b302352790fe</md5>
+    <crc32>7ca6c2c4</crc32>
+    <sha1>fabc093dcea809a57cde527152db1d4022bf9201</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-14.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195646</mtime>
+    <size>735033018</size>
+    <md5>c6faba720a1790c25239f8017f03175d</md5>
+    <crc32>0863a66c</crc32>
+    <sha1>4865423f65304ed1e9ffc45afb5b42b509d15716</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-15.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195716</mtime>
+    <size>758505436</size>
+    <md5>829f3c40e8dab23880e32108cd5bcc7a</md5>
+    <crc32>7579c0b7</crc32>
+    <sha1>df6e00703513d6df11b7029795b659f2107dd447</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-16.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195786</mtime>
+    <size>784889749</size>
+    <md5>2d2f53d1d8e278f30bc9aaafeb1193f7</md5>
+    <crc32>19b735a9</crc32>
+    <sha1>7cc270321398aa820faf5976a99200977231e6c7</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-17.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195851</mtime>
+    <size>734924833</size>
+    <md5>48d9554f8b66fd31c371015bb5d68b32</md5>
+    <crc32>14920145</crc32>
+    <sha1>ab2a8c8afbc0e920f5ba707d1a24ce2a44d1cda6</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-18.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195913</mtime>
+    <size>787024828</size>
+    <md5>d7074650d0a095f28b5a134f2ab97112</md5>
+    <crc32>524afe2b</crc32>
+    <sha1>23090d7aae40ec375528cb71b163b9b5ec61e20e</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-19.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329195971</mtime>
+    <size>772198002</size>
+    <md5>99f46b0af43b835bd5cf0b828725bb3b</md5>
+    <crc32>5e5f7f4c</crc32>
+    <sha1>3baf268beaaf7ee4698813eabbd433b2550e0888</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-20.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196034</mtime>
+    <size>743409858</size>
+    <md5>6adddb9f335529dde5c1c81e3ed4c6c9</md5>
+    <crc32>fba18043</crc32>
+    <sha1>d910151b375a94c4f7b758d83aae67e3ddef4b44</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-21.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196105</mtime>
+    <size>743040146</size>
+    <md5>8840fed1b81b3596e9c5197e9a908858</md5>
+    <crc32>18305048</crc32>
+    <sha1>5ecfd3649b3a001727c9d1bdc12487c8a4aef545</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-22.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196167</mtime>
+    <size>767369034</size>
+    <md5>6f01f19b13f7afab89361739411c16d2</md5>
+    <crc32>33913992</crc32>
+    <sha1>a167f78efe7f0ceac79e977541c408adc249f44b</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-23.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196230</mtime>
+    <size>799040182</size>
+    <md5>5c730b6b07995fe18577f3f1bcfe4639</md5>
+    <crc32>4da5d960</crc32>
+    <sha1>c06fb817a209c4fb89c240a52678e79db8a25cef</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-24.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196290</mtime>
+    <size>785155187</size>
+    <md5>3cfe5b38274fa7085844e72f10c56a16</md5>
+    <crc32>a1553624</crc32>
+    <sha1>a7358c9c6bd9a476323f115050d10881255ce839</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-25.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196363</mtime>
+    <size>802481668</size>
+    <md5>52ac87d2c2f8304302c32e8f0beb752f</md5>
+    <crc32>6ad3db9e</crc32>
+    <sha1>756ed9d2b8d0a2a75a938dd1cc2d3999be7848a5</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-26.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196439</mtime>
+    <size>782603749</size>
+    <md5>496a1db069b65bd46a91f3566021b9fe</md5>
+    <crc32>34c48eaf</crc32>
+    <sha1>ade5afca10ef4fb8632aba7c4b8d7c0c2db88854</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-27.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196499</mtime>
+    <size>777651769</size>
+    <md5>ac5ab51d58c68a6ea41e166f6f99ee12</md5>
+    <crc32>c71d6d27</crc32>
+    <sha1>f446563af24f5e112c0fdbab36e0f9e1ecf8c656</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-28.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196557</mtime>
+    <size>742307167</size>
+    <md5>f30d705ad84bb9999730bd1d139b3d97</md5>
+    <crc32>fc938dd5</crc32>
+    <sha1>0bfb514e5d5ef3b77b616adcf27f36b59ca136e8</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-29.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196617</mtime>
+    <size>792613154</size>
+    <md5>e9c1ea311a7334a49dc88ac1534d7350</md5>
+    <crc32>af04aece</crc32>
+    <sha1>c894ebadc3228620e51d35263adfab25ddb9d6fb</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-30.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196685</mtime>
+    <size>792247171</size>
+    <md5>69fb9d21af8dac433b2cb388d9cf8a41</md5>
+    <crc32>c7e88181</crc32>
+    <sha1>e4643b1758aa3e9718f62007325f352b862ceee0</sha1>
+  </file>
+  <file name="twitter-stream-2012-01-31.zip" source="original">
+    <format>ZIP</format>
+    <mtime>1329196763</mtime>
+    <size>796980607</size>
+    <md5>b7cd0865f5735a4ca5488d5a68089327</md5>
+    <crc32>67fbd895</crc32>
+    <sha1>022e28b278732aa846f4639717e0ced04a60f1a8</sha1>
+  </file>
+  <file name="twitterlogo.jpg" source="original">
+    <mtime>1514841605</mtime>
+    <size>221287</size>
+    <md5>df6c7336d7e4e19356e663378940b6f5</md5>
+    <crc32>aca9a7ce</crc32>
+    <sha1>8950e18c5a56d2e31de8d054d79fc8b678a7ec38</sha1>
+    <format>JPEG</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="twitterlogo_thumb.jpg" source="derivative">
+    <format>JPEG Thumb</format>
+    <original>twitterlogo.jpg</original>
+    <mtime>1514841930</mtime>
+    <size>4369</size>
+    <md5>ebf204eab63dc9ed7843a04409face45</md5>
+    <crc32>06c2c2a2</crc32>
+    <sha1>7f488ca8de6b9cf83cc4909b1da74bedf3ec9148</sha1>
+  </file>
+</files>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1632842687</mtime>
+    <size>9755</size>
+    <md5>935219e7207a24428c63d300d0432432</md5>
+    <crc32>a6a546b6</crc32>
+    <sha1>e7b66f985d40d56bc49ca2979583c38adeacf743</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="archiveteam-twitter-2012-08.tar" source="original">
+    <format>TAR</format>
+    <mtime>1354758093</mtime>
+    <size>36556369920</size>
+    <md5>f8b4d2e4addb848c23e093ff732cba6d</md5>
+    <crc32>98d9455f</crc32>
+    <sha1>adc505a0a5d88274f14e5f57d2d542a0ec148919</sha1>
+  </file>
+  <file name="archiveteam-twitter-2012-08.tar_meta.txt" source="original">
+    <format>Metadata</format>
+    <mtime>1354758094</mtime>
+    <size>583</size>
+    <md5>5d7bf202690392872cead794da39225b</md5>
+    <crc32>9b8cba0d</crc32>
+    <sha1>1ad60553880865b2eb8cdda8890ec7b427bcd0bf</sha1>
+  </file>
+  <file name="archiveteam-twitter-stream-2012-08_archive.torrent" source="metadata">
+    <btih>02abb7175ecce8c24cb74897b525424acabbbd0d</btih>
+    <mtime>1632842693</mtime>
+    <size>177135</size>
+    <md5>f9b663498351b6f1900d11c489d45368</md5>
+    <crc32>db790d65</crc32>
+    <sha1>a616f9e739123daac636b9b23d94133848701add</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2012-08_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>5c384e337af79524ec199462947dab29</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="archiveteam-twitter-stream-2012-08_meta.sqlite" source="original">
+    <mtime>1500675642</mtime>
+    <size>6144</size>
+    <md5>ecd1c68ac8a7b5f76d80e2e7eafeb9c7</md5>
+    <crc32>2201517a</crc32>
+    <sha1>1475f89254ea60bccc90f8d3523323d1943e8ea2</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2012-08_meta.xml" source="original">
+    <format>Metadata</format>
+    <mtime>1632842680</mtime>
+    <size>905</size>
+    <md5>7c42ad2d547fe52a5e0840ec29918a94</md5>
+    <crc32>a80a29c4</crc32>
+    <sha1>14a07060c86c83faeb963d4edae29adcfff94ccb</sha1>
+  </file>
+  <file name="twitterlogo.jpg" source="original">
+    <mtime>1500675639</mtime>
+    <size>221287</size>
+    <md5>df6c7336d7e4e19356e663378940b6f5</md5>
+    <crc32>aca9a7ce</crc32>
+    <sha1>8950e18c5a56d2e31de8d054d79fc8b678a7ec38</sha1>
+    <format>JPEG</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="twitterlogo_thumb.jpg" source="derivative">
+    <format>JPEG Thumb</format>
+    <original>twitterlogo.jpg</original>
+    <mtime>1500676952</mtime>
+    <size>4369</size>
+    <md5>ebf204eab63dc9ed7843a04409face45</md5>
+    <crc32>06c2c2a2</crc32>
+    <sha1>7f488ca8de6b9cf83cc4909b1da74bedf3ec9148</sha1>
+  </file>
+</files>
