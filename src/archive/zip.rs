@@ -1,28 +1,23 @@
 use std::io::{BufRead, BufReader, Read, Seek};
 use std::path::PathBuf;
 
-/*pub fn list<R: Read + Seek>(reader: R) -> Result<Vec<(PathBuf, u64)>, Error> {
-    let mut archive = tar::Archive::new(reader);
+pub fn list<R: Read + Seek>(reader: R) -> Result<Vec<String>, Error> {
+    let archive = zip::ZipArchive::new(reader)?;
 
     let mut results = archive
-        .entries_with_seek()?
-        .map(|entry| {
-            let entry = entry?;
-            entry
-                .path()
-                .map(|path| (path.to_path_buf(), entry.size()))
-                .map_err(Error::from)
+        .file_names()
+        .filter_map(|name| {
+            if name.ends_with('/') {
+                None
+            } else {
+                Some(name.to_string())
+            }
         })
-        /*.filter(|result| match result {
-            Ok((path, _)) => path.is_file(),
-            Err(_) => true,
-        })*/
-        .collect::<Result<Vec<_>, _>>()?;
-
+        .collect::<Vec<_>>();
     results.sort();
 
     Ok(results)
-}*/
+}
 
 pub fn extract<R: Read + Seek>(reader: R, name: &str) -> Result<Vec<String>, Error> {
     let mut archive = zip::ZipArchive::new(reader)?;
@@ -42,4 +37,17 @@ pub enum Error {
     Io(#[from] std::io::Error),
     #[error("Zip error")]
     Zip(#[from] zip::result::ZipError),
+}
+
+#[cfg(test)]
+mod tests {
+    use std::fs::File;
+
+    #[test]
+    fn run() {
+        let example_file = File::open("examples/archives/twitter-stream-2021-01-01.zip").unwrap();
+        let files = super::list(example_file).unwrap();
+
+        assert_eq!(files.len(), 2);
+    }
 }
