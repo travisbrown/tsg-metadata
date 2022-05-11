@@ -1,11 +1,18 @@
 use regex::Regex;
 use serde_json::Value;
+use std::collections::HashSet;
 
-pub fn find_users(value: &Value, acc: &mut Vec<(u64, String)>) -> Result<(), Error> {
+pub fn find_users(value: &Value) -> Result<HashSet<(u64, String)>, Error> {
+    let mut result = HashSet::new();
+    add_users(value, &mut result)?;
+    Ok(result)
+}
+
+pub fn add_users(value: &Value, acc: &mut HashSet<(u64, String)>) -> Result<(), Error> {
     match value {
         Value::Array(values) => {
             for value in values {
-                find_users(&value, acc)?;
+                add_users(&value, acc)?;
             }
             Ok(())
         }
@@ -22,7 +29,7 @@ pub fn find_users(value: &Value, acc: &mut Vec<(u64, String)>) -> Result<(), Err
                             .and_then(|id_str| id_str.parse::<u64>().ok())
                             .ok_or_else(|| Error::InvalidIdStrField(id_str_value.clone()))?;
 
-                        acc.push((id, screen_name.to_string()));
+                        acc.insert((id, screen_name.to_string()));
                     }
                     None => {
                         return Err(Error::MissingIdStrField(value.clone()));
@@ -30,7 +37,7 @@ pub fn find_users(value: &Value, acc: &mut Vec<(u64, String)>) -> Result<(), Err
                 }
             }
             for value in fields.values() {
-                find_users(&value, acc)?;
+                add_users(&value, acc)?;
             }
             Ok(())
         }

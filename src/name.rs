@@ -1,4 +1,4 @@
-use chrono::{NaiveDate, NaiveDateTime};
+use chrono::{Datelike, NaiveDate, NaiveDateTime, Timelike};
 use regex::Regex;
 
 lazy_static::lazy_static! {
@@ -26,6 +26,17 @@ pub fn extract_timestamp(name: &str) -> Result<NaiveDateTime, Error> {
         NaiveDateTime::from_timestamp_opt(timestamp_s, 0).filter(|result| *result == timestamp);
 
     round_tripped.ok_or_else(|| Error::InvalidDateTime(timestamp))
+}
+
+pub fn to_name(timestamp: NaiveDateTime) -> String {
+    format!(
+        "{:04}/{:02}/{:02}/{:02}/{:02}.json.bz2",
+        timestamp.year(),
+        timestamp.month(),
+        timestamp.day(),
+        timestamp.hour(),
+        timestamp.minute()
+    )
 }
 
 #[derive(thiserror::Error, Debug)]

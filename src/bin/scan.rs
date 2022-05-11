@@ -12,11 +12,8 @@ fn main() -> Result<(), Error> {
 
     let mut count = 0;
     for line in lines {
-        let mut acc = vec![];
         let value = serde_json::from_str(&line).unwrap();
-        tsg_metadata::extract::find_users(&value, &mut acc).unwrap();
-
-        count += acc.len();
+        count += tsg_metadata::extract::find_users(&value).unwrap().len();
     }
 
     /*for _ in 0..100 {
