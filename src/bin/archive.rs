@@ -3,7 +3,7 @@ use std::fs::File;
 
 fn main() -> Result<(), Error> {
     let opts: Opts = Opts::parse();
-    let _ = tsg_metadata::cli::init_logging(opts.verbose)?;
+    tsg_metadata::cli::init_logging(opts.verbose)?;
 
     match opts.command {
         Command::Contents => {
@@ -23,8 +23,8 @@ fn main() -> Result<(), Error> {
 #[clap(name = "source", version, author)]
 struct Opts {
     /// Level of verbosity
-    #[clap(short, long, parse(from_occurrences))]
-    verbose: i32,
+    #[clap(short, long, global = true, action = clap::ArgAction::Count)]
+    verbose: u8,
     /// File or directory path
     #[clap(short, long)]
     path: String,

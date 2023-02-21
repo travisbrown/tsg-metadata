@@ -1,4 +1,3 @@
-use regex::Regex;
 use serde_json::Value;
 use std::collections::HashSet;
 
@@ -12,7 +11,7 @@ pub fn add_users(value: &Value, acc: &mut HashSet<(u64, String)>) -> Result<(), 
     match value {
         Value::Array(values) => {
             for value in values {
-                add_users(&value, acc)?;
+                add_users(value, acc)?;
             }
             Ok(())
         }
@@ -37,7 +36,7 @@ pub fn add_users(value: &Value, acc: &mut HashSet<(u64, String)>) -> Result<(), 
                 }
             }
             for value in fields.values() {
-                add_users(&value, acc)?;
+                add_users(value, acc)?;
             }
             Ok(())
         }

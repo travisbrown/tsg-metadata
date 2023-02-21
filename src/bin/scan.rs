@@ -6,7 +6,7 @@ use std::io::{BufRead, BufReader};
 
 fn main() -> Result<(), Error> {
     let opts: Opts = Opts::parse();
-    let _ = tsg_metadata::cli::init_logging(opts.verbose)?;
+    tsg_metadata::cli::init_logging(opts.verbose)?;
 
     let lines = tsg_metadata::archive::zip::extract(File::open(&opts.path)?, &opts.file)?;
 
@@ -64,11 +64,11 @@ fn find_user_info_json(input: &str) -> Vec<u64> {
     result
 }
 
-fn find_user_id_str(value: &serde_json::Value, acc: &mut Vec<u64>) -> () {
+fn find_user_id_str(value: &serde_json::Value, acc: &mut Vec<u64>) {
     match value {
         serde_json::Value::Array(values) => {
             for value in values {
-                find_user_id_str(&value, acc);
+                find_user_id_str(value, acc);
             }
         }
         serde_json::Value::Object(map) => {
@@ -83,7 +83,7 @@ fn find_user_id_str(value: &serde_json::Value, acc: &mut Vec<u64>) -> () {
                 );
             }
             for value in map.values() {
-                find_user_id_str(&value, acc);
+                find_user_id_str(value, acc);
             }
         }
         _ => (),
@@ -94,8 +94,8 @@ fn find_user_id_str(value: &serde_json::Value, acc: &mut Vec<u64>) -> () {
 #[clap(name = "scan", version, author)]
 struct Opts {
     /// Level of verbosity
-    #[clap(short, long, parse(from_occurrences))]
-    verbose: i32,
+    #[clap(short, long, global = true, action = clap::ArgAction::Count)]
+    verbose: u8,
     /// File or directory path
     #[clap(short, long)]
     path: String,

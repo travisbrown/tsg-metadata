@@ -8,14 +8,14 @@ edition = "2021"
 [dependencies]
 bzip2 = "0.4"
 chrono = "0.4"
-clap = { version = "3", features = ["derive"] }
+clap = { version = "4", features = ["derive"] }
 hex = "0.4"
 lazy_static = "1"
 log = "0.4"
 regex = "1"
-roxmltree = "0.14"
+roxmltree = "0.18"
 serde_json = { version = "1.0", features = ["preserve_order"] }
-simplelog = "0.11"
+simplelog = "0.12"
 tar = "0.4"
 thiserror = "1"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }

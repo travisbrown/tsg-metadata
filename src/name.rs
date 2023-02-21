@@ -25,7 +25,7 @@ pub fn extract_timestamp(name: &str) -> Result<NaiveDateTime, Error> {
     let round_tripped =
         NaiveDateTime::from_timestamp_opt(timestamp_s, 0).filter(|result| *result == timestamp);
 
-    round_tripped.ok_or_else(|| Error::InvalidDateTime(timestamp))
+    round_tripped.ok_or(Error::InvalidDateTime(timestamp))
 }
 
 pub fn to_name(timestamp: NaiveDateTime) -> String {

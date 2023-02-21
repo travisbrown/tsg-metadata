@@ -25,10 +25,10 @@ pub fn extract<R: Read + Seek>(reader: R, name: &str) -> Result<Vec<String>, Err
     let file = BufReader::new(archive.by_name(name)?);
     let decoder = BufReader::new(bzip2::read::MultiBzDecoder::new(file));
 
-    Ok(decoder
+    decoder
         .lines()
         .map(|line| line.map_err(Error::from))
-        .collect::<Result<Vec<_>, _>>()?)
+        .collect()
 }
 
 #[derive(thiserror::Error, Debug)]
