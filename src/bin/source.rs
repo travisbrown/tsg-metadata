@@ -6,9 +6,9 @@ fn main() -> Result<(), Error> {
     tsg_metadata::cli::init_logging(opts.verbose)?;
     let path = Path::new(&opts.path);
     let records = if path.is_dir() {
-        tsg_metadata::sources::read_metadata_dir(path)?
+        tsg_metadata::source::read_metadata_dir(path)?
     } else {
-        tsg_metadata::sources::read_metadata(path)?
+        tsg_metadata::source::read_metadata(path)?
     };
 
     match opts.command {
@@ -65,7 +65,7 @@ enum Command {
 #[derive(thiserror::Error, Debug)]
 pub enum Error {
     #[error("Metadata parsing error")]
-    Sources(#[from] tsg_metadata::sources::Error),
+    Sources(#[from] tsg_metadata::source::Error),
     #[error("Logging initialization error")]
     LogInit(#[from] log::SetLoggerError),
 }
