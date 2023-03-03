@@ -3,7 +3,7 @@ use std::path::Path;
 
 fn main() -> Result<(), Error> {
     let opts: Opts = Opts::parse();
-    let _ = tsg_metadata::cli::init_logging(opts.verbose)?;
+    tsg_metadata::cli::init_logging(opts.verbose)?;
     let path = Path::new(&opts.path);
     let records = if path.is_dir() {
         tsg_metadata::sources::read_metadata_dir(path)?
@@ -43,8 +43,8 @@ fn main() -> Result<(), Error> {
 #[clap(name = "source", version, author)]
 struct Opts {
     /// Level of verbosity
-    #[clap(short, long, parse(from_occurrences))]
-    verbose: i32,
+    #[clap(short, long, global = true, action = clap::ArgAction::Count)]
+    verbose: u8,
     /// File or directory path
     #[clap(short, long, default_value = "sources/xml/")]
     path: String,
