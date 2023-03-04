@@ -1,6 +1,6 @@
 # Twitter Stream Grab metadata
 
-[![Rust build status](https://img.shields.io/github/workflow/status/travisbrown/tsg-metadata/rust-ci.svg?label=rust)](https://github.com/travisbrown/tsg-metadata/actions)
+[![Rust build status](https://img.shields.io/github/actions/workflow/status/travisbrown/tsg-metadata/ci.yaml?branch=main)](https://github.com/travisbrown/tsg-metadata/actions)
 [![Coverage status](https://img.shields.io/codecov/c/github/travisbrown/tsg-metadata/main.svg)](https://codecov.io/github/travisbrown/tsg-metadata)
 
 This repository contains metadata associated with the [Twitter Stream Grab][tsg],
