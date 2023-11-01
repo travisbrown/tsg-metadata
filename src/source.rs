@@ -50,7 +50,7 @@ pub fn read_metadata<P: AsRef<Path>>(path: P) -> Result<Vec<Record>, Error> {
 
             let format = fields.get("format");
 
-            if format == Some(&"ZIP") || format == Some(&"TAR") {
+            if format == Some(&"ZIP") || format == Some(&"TAR") || format == Some(&"GZIP") {
                 let size = fields
                     .get("size")
                     .and_then(|value| value.parse::<i64>().ok())?;

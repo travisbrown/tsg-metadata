@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files>
+  <file name="__ia_thumb.jpg" source="original">
+    <mtime>1693806105</mtime>
+    <size>7700</size>
+    <md5>feb8be69206310688ff0918fe0a53633</md5>
+    <crc32>c045cd32</crc32>
+    <sha1>d034954e20393acf62e01d1b3e23f5edc6a862df</sha1>
+    <format>Item Tile</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="archiveteam-twitter-stream-2022-12_archive.torrent" source="metadata">
+    <btih>7ad3acb70c514a22c8d354a8679a5fa4b9f02c5b</btih>
+    <mtime>1693817151</mtime>
+    <size>229436</size>
+    <md5>64ab9ff6ae5fa37f2a9a3bf0196f77a2</md5>
+    <crc32>38932113</crc32>
+    <sha1>96ef6a24043e2241035fc25c876e57a326a74897</sha1>
+    <format>Archive BitTorrent</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2022-12_files.xml" source="original">
+    <format>Metadata</format>
+    <md5>2d4272309cd43c5f89a08480697fa6a3</md5>
+    <summation>md5</summation>
+  </file>
+  <file name="archiveteam-twitter-stream-2022-12_meta.sqlite" source="original">
+    <mtime>1693806104</mtime>
+    <size>20480</size>
+    <md5>57b52ac68106c492ce961a76e4386220</md5>
+    <crc32>361c21d0</crc32>
+    <sha1>a5d27f328df8d3461804aa2a9e25842bacb198bc</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="archiveteam-twitter-stream-2022-12_meta.xml" source="original">
+    <mtime>1693790347</mtime>
+    <size>833</size>
+    <md5>92a018c89962c4be4a58a5739ff1f14d</md5>
+    <crc32>31c8ef2a</crc32>
+    <sha1>3413f2f10f0c7de3392782307697126c29d637d1</sha1>
+    <format>Metadata</format>
+  </file>
+  <file name="twitter-stream-20221212.tar.gz" source="original">
+    <mtime>1693790333</mtime>
+    <size>47522351764</size>
+    <md5>78e2840edf0fa585305756108c702c94</md5>
+    <crc32>58f82844</crc32>
+    <sha1>ab95661730c6410b1cb67bd7eba1b0739bc051dd</sha1>
+    <format>GZIP</format>
+  </file>
+  <file name="twitterbird.jpg" source="original">
+    <mtime>1693795142</mtime>
+    <size>63335</size>
+    <md5>1aa4ad976e6a1b80bcefe687997ebb22</md5>
+    <crc32>83ec159f</crc32>
+    <sha1>a7bbde719fc397b43fef59c2e63264b13245f3a4</sha1>
+    <format>JPEG</format>
+    <rotation>0</rotation>
+  </file>
+  <file name="twitterbird_thumb.jpg" source="derivative">
+    <format>JPEG Thumb</format>
+    <original>twitterbird.jpg</original>
+    <mtime>1693817059</mtime>
+    <size>7349</size>
+    <md5>0f66d1d9db820b1507fce6ecf05a8bfe</md5>
+    <crc32>c9001f60</crc32>
+    <sha1>0ff63cced325058dede0c00a3d0578c4e44ec6b2</sha1>
+  </file>
+</files>
