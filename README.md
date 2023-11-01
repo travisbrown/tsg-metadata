@@ -8,6 +8,10 @@ which is a collection of billions of tweets archived over a decade by [the Archi
 "a rogue archivist collective dedicated to saving copies of rapidly dying or deleted websites for the sake of history and digital heritage".
 The Twitter Stream Grab is published by the [Internet Archive][ia].
 
+Please note that the author of this repository is not affiliated with the Internet Archive or the Archive Team.
+This repository does not contain any code that accesses any Twitter API or other Twitter services.
+It also does not contain any data from Twitter. It only provides tools for working with files published by the Internet Archive.
+
 The `sources` directory contains metadata files for the Twitter Stream Grab copied from the Internet Archive.
 Please note that otherwise the code provided in this repository is **not** "open source",
 but the source is available for use and modification by individuals, non-profit organizations, and worker-owned cooperatives
