@@ -1,4 +1,4 @@
-use clap::Parser;
+use cli_helpers::prelude::*;
 use std::collections::HashMap;
 use std::fs::File;
 use std::io::{BufWriter, Write};
@@ -7,7 +7,7 @@ use tsg_metadata::archive::{read_contents, FileEntry};
 
 fn main() -> Result<(), Error> {
     let opts: Opts = Opts::parse();
-    tsg_metadata::cli::init_logging(opts.verbose)?;
+    opts.verbose.init_logging()?;
 
     let input = Path::new(&opts.input);
 
@@ -65,7 +65,7 @@ fn list_files<P: AsRef<Path>>(base: P) -> Result<HashMap<String, PathBuf>, Error
                     .insert(file_name.clone(), archive_path)
                     .map_or(Ok(()), |_| Err(Error::FileNameCollision(file_name)))?;
             } else {
-                log::warn!("Unexpected archive path: {:?}", archive_path);
+                ::log::warn!("Unexpected archive path: {:?}", archive_path);
             }
         }
     }
@@ -77,8 +77,8 @@ fn list_files<P: AsRef<Path>>(base: P) -> Result<HashMap<String, PathBuf>, Error
 #[clap(name = "contents", version, author)]
 struct Opts {
     /// Level of verbosity
-    #[clap(short, long, global = true, action = clap::ArgAction::Count)]
-    verbose: u8,
+    #[clap(flatten)]
+    verbose: Verbosity,
     /// File or directory path
     #[clap(short, long)]
     input: String,
@@ -107,6 +107,6 @@ pub enum Error {
     FileNameCollision(String),
     #[error("I/O error")]
     Io(#[from] std::io::Error),
-    #[error("Logging initialization error")]
-    LogInit(#[from] log::SetLoggerError),
+    #[error("CLI initialization error")]
+    Cli(#[from] cli_helpers::Error),
 }

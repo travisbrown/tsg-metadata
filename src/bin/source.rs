@@ -1,9 +1,10 @@
-use clap::Parser;
+use cli_helpers::prelude::*;
 use std::path::Path;
 
 fn main() -> Result<(), Error> {
     let opts: Opts = Opts::parse();
-    tsg_metadata::cli::init_logging(opts.verbose)?;
+    opts.verbose.init_logging()?;
+
     let path = Path::new(&opts.path);
     let records = if path.is_dir() {
         tsg_metadata::source::read_metadata_dir(path)?
@@ -43,8 +44,8 @@ fn main() -> Result<(), Error> {
 #[clap(name = "source", version, author)]
 struct Opts {
     /// Level of verbosity
-    #[clap(short, long, global = true, action = clap::ArgAction::Count)]
-    verbose: u8,
+    #[clap(flatten)]
+    verbose: Verbosity,
     /// File or directory path
     #[clap(short, long, default_value = "sources/xml/")]
     path: String,
@@ -66,6 +67,6 @@ enum Command {
 pub enum Error {
     #[error("Metadata parsing error")]
     Sources(#[from] tsg_metadata::source::Error),
-    #[error("Logging initialization error")]
-    LogInit(#[from] log::SetLoggerError),
+    #[error("CLI initialization error")]
+    Cli(#[from] cli_helpers::Error),
 }
