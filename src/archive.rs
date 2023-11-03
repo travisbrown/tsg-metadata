@@ -1,12 +1,13 @@
+use flate2::read::GzDecoder;
 use memmap::Mmap;
 use piz::ZipArchive;
-use std::ffi::OsStr;
 use std::fs::File;
+use std::io::Read;
 use std::path::{Path, PathBuf};
 use tar::Archive;
 
 pub fn read_contents<P: AsRef<Path>>(input: P) -> Result<Vec<FileEntry>, Error> {
-    let extension: Extension = input.as_ref().extension().try_into()?;
+    let extension: Extension = input.as_ref().try_into()?;
     let file = File::open(input)?;
 
     let mut entries: Vec<FileEntry> = match extension {
@@ -28,24 +29,12 @@ pub fn read_contents<P: AsRef<Path>>(input: P) -> Result<Vec<FileEntry>, Error> 
         }
         Extension::Tar => {
             let mut archive = Archive::new(file);
-            archive
-                .entries()?
-                .map(|entry| {
-                    entry
-                        .and_then(|entry| {
-                            entry.path().map(|path| (path.to_path_buf(), entry.size()))
-                        })
-                        .map_err(Error::from)
-                })
-                .filter(|path| path.as_ref().map_or(true, |(_, size)| *size > 0))
-                .map(|path| {
-                    path.and_then(|(path, size)| {
-                        path.to_str()
-                            .ok_or_else(|| Error::InvalidEntryPath(path.to_path_buf()))
-                            .map(|path| FileEntry::new(path.to_string(), size as u32, None))
-                    })
-                })
-                .collect::<Result<Vec<_>, _>>()?
+            read_tar_contents(&mut archive)?
+        }
+        Extension::TarGz => {
+            let stream = GzDecoder::new(file);
+            let mut archive = Archive::new(stream);
+            read_tar_contents(&mut archive)?
         }
     };
 
@@ -54,10 +43,30 @@ pub fn read_contents<P: AsRef<Path>>(input: P) -> Result<Vec<FileEntry>, Error> 
     Ok(entries)
 }
 
+fn read_tar_contents<R: Read>(archive: &mut Archive<R>) -> Result<Vec<FileEntry>, Error> {
+    archive
+        .entries()?
+        .map(|entry| {
+            entry
+                .and_then(|entry| entry.path().map(|path| (path.to_path_buf(), entry.size())))
+                .map_err(Error::from)
+        })
+        .filter(|path| path.as_ref().map_or(true, |(_, size)| *size > 0))
+        .map(|path| {
+            path.and_then(|(path, size)| {
+                path.to_str()
+                    .ok_or_else(|| Error::InvalidEntryPath(path.to_path_buf()))
+                    .map(|path| FileEntry::new(path.to_string(), size as u32, None))
+            })
+        })
+        .collect()
+}
+
 #[derive(Clone, Copy, Eq, PartialEq)]
 pub enum Extension {
     Zip,
     Tar,
+    TarGz,
 }
 
 #[derive(Clone, Eq, Ord, PartialEq, PartialOrd)]
@@ -73,17 +82,32 @@ impl FileEntry {
     }
 }
 
-impl TryFrom<Option<&OsStr>> for Extension {
+impl TryFrom<&Path> for Extension {
     type Error = Error;
-    fn try_from(value: Option<&OsStr>) -> Result<Self, Self::Error> {
-        match value
+    fn try_from(value: &Path) -> Result<Self, Self::Error> {
+        let file_str = value
+            .file_name()
             .and_then(|value| value.to_str())
             .map(|value| value.to_lowercase())
-        {
-            Some(value) if value == "zip" => Ok(Self::Zip),
-            Some(value) if value == "tar" => Ok(Self::Tar),
-            Some(other) => Err(Error::UnknownExtension(other)),
-            None => Err(Error::UnknownExtension("".to_string())),
+            .ok_or_else(|| Error::InvalidEntryPath(value.to_path_buf()))?;
+
+        let parts = file_str.split('.').collect::<Vec<_>>();
+        println!("{:?}", parts);
+
+        match parts.last() {
+            Some(value) if *value == "zip" => Ok(Self::Zip),
+            Some(value) if *value == "tar" => Ok(Self::Tar),
+            Some(value)
+                if *value == "gz"
+                    && parts
+                        .get(parts.len() - 2)
+                        .filter(|value| **value == "tar")
+                        .is_some() =>
+            {
+                Ok(Self::TarGz)
+            }
+            Some(value) => Err(Error::UnknownExtension(value.to_string())),
+            None => Err(Error::InvalidEntryPath(value.to_path_buf())),
         }
     }
 }
