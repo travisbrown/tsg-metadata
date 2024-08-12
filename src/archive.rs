@@ -49,14 +49,22 @@ impl<'a> Iterator for ArchiveEntries<'a> {
 
                 let mut buffer = String::new();
 
-                if file_entry.is_bzip2() {
-                    MultiBzDecoder::new(reader)
-                        .read_to_string(&mut buffer)
-                        .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
-                } else {
-                    reader
-                        .read_to_string(&mut buffer)
-                        .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+                match file_entry.compression() {
+                    Some(EntryCompression::Bz2) => {
+                        MultiBzDecoder::new(reader)
+                            .read_to_string(&mut buffer)
+                            .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+                    }
+                    Some(EntryCompression::Gz) => {
+                        GzDecoder::new(reader)
+                            .read_to_string(&mut buffer)
+                            .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+                    }
+                    None => {
+                        reader
+                            .read_to_string(&mut buffer)
+                            .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+                    }
                 }
 
                 Ok((file_entry, buffer))
@@ -96,14 +104,22 @@ fn read_tar_entry<R: Read>(mut entry: tar::Entry<R>) -> Result<Option<(FileEntry
 
         let mut buffer = String::new();
 
-        if file_entry.is_bzip2() {
-            MultiBzDecoder::new(entry)
-                .read_to_string(&mut buffer)
-                .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
-        } else {
-            entry
-                .read_to_string(&mut buffer)
-                .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+        match file_entry.compression() {
+            Some(EntryCompression::Bz2) => {
+                MultiBzDecoder::new(entry)
+                    .read_to_string(&mut buffer)
+                    .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+            }
+            Some(EntryCompression::Gz) => {
+                GzDecoder::new(entry)
+                    .read_to_string(&mut buffer)
+                    .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+            }
+            None => {
+                entry
+                    .read_to_string(&mut buffer)
+                    .map_err(|error| Error::DecodingIo(file_entry.clone(), error))?;
+            }
         }
 
         Ok(Some((file_entry, buffer)))
@@ -164,11 +180,17 @@ fn list_tar_entries<R: Read>(archive: &mut Archive<R>) -> Result<Vec<FileEntry>,
         .collect()
 }
 
-#[derive(Clone, Copy, Eq, PartialEq)]
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
 pub enum Extension {
     Zip,
     Tar,
     TarGz,
+}
+
+#[derive(Clone, Copy, Debug, Eq, PartialEq)]
+pub enum EntryCompression {
+    Bz2,
+    Gz,
 }
 
 #[derive(Clone, Debug, Eq, Ord, PartialEq, PartialOrd)]
@@ -183,8 +205,12 @@ impl FileEntry {
         Self { path, size, crc32 }
     }
 
-    pub fn is_bzip2(&self) -> bool {
-        self.path.to_lowercase().ends_with(".bz2")
+    pub fn compression(&self) -> Option<EntryCompression> {
+        match self.path.to_lowercase() {
+            value if value.ends_with(".bz2") => Some(EntryCompression::Bz2),
+            value if value.ends_with(".gz") => Some(EntryCompression::Gz),
+            _ => None,
+        }
     }
 }
 
