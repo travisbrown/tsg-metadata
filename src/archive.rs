@@ -38,7 +38,7 @@ impl<'a> From<&'a ZipArchive<'a>> for ArchiveEntries<'a> {
     }
 }
 
-impl<'a> Iterator for ArchiveEntries<'a> {
+impl Iterator for ArchiveEntries<'_> {
     type Item = Result<(FileEntry, String), Error>;
 
     fn next(&mut self) -> Option<Self::Item> {
@@ -214,7 +214,7 @@ impl FileEntry {
     }
 }
 
-impl<'a> From<&FileMetadata<'a>> for FileEntry {
+impl From<&FileMetadata<'_>> for FileEntry {
     fn from(value: &FileMetadata) -> Self {
         Self::new(
             value.path.as_str().to_string(),
@@ -234,7 +234,6 @@ impl TryFrom<&Path> for Extension {
             .ok_or_else(|| Error::InvalidEntryPath(value.to_path_buf()))?;
 
         let parts = file_str.split('.').collect::<Vec<_>>();
-        println!("{:?}", parts);
 
         match parts.last() {
             Some(value) if *value == "zip" => Ok(Self::Zip),
